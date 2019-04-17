@@ -7,3 +7,9 @@ class PlayerViewSet(viewsets.ModelViewSet):
     queryset = Player.objects.all()
     permission_classes = [permissions.AllowAny]
     serializer_class = PlayerSerializer
+
+
+class TeamViewSet(viewsets.ModelViewSet):
+    queryset = Team.objects.all()
+    permission_classes = [permissions.AllowAny]
+    serializer_class = TeamSerializer
